@@ -1,10 +1,9 @@
-import LandingPage from "./Components/LandingPage"
-import About from "./Components/About"
-import Navbar from "./Components/Navbar"
-import Skills from "./Components/Skills"
-import Projects from "./Components/Projects"
-
-import Contact from "./Components/Contact"
+import LandingPage from "./Pages/LandingPage"
+import About from "./Pages/About"
+import Navbar from "./Pages/Navbar"
+import Skills from "./Pages/Skills"
+import Projects from "./Pages/Projects"
+import Contact from "./Pages/Contact"
 const App = () => {
   
   return (

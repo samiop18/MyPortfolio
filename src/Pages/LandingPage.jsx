@@ -11,6 +11,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
 
 
+
 const MovingStars = ({ speed = 0.1, ...props }) => {
   const group = useRef();
 
@@ -32,7 +33,7 @@ const LandingPage = () => {
   const COLORS = ["#750b27", "#a81e51", "#1d2fb5", "#1e750b", "#e01414"];
   const color = useMotionValue(COLORS[0]);
   const backgroundImage = useMotionTemplate`radial-gradient(80% 100% at 50% 25% , black 60%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
+  const border = useMotionTemplate`2px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   
   useEffect(() => {
@@ -72,7 +73,7 @@ const LandingPage = () => {
         </div>
         <div className="flex flex-col sm:flex-row justify-center items-center gap-2 mt-6 w-full max-w-2xl">
           <motion.a
-            href="#"
+            href="/#projects"
             style={{ border, boxShadow }}
             className="w-fit sm:w-auto mt-5 z-30 rounded-2xl px-6 py-3 text-center transition-all duration-100 ease-in-out text-white text-md hover:scale-105 active:scale-95"
           >
