@@ -8,7 +8,7 @@ const Profile = () => {
         <div className="image">
             <img src='profileImg.jpeg'></img>
         </div>
-        <h1 className='text-3xl font-extrabold text-gray-300'>About <span style={{color:"#122ade"}}>Me</span></h1>
+        <h1 className='text-2xl lg:text-3xl font-extrabold text-gray-300'>About <span style={{color:"#122ade"}}>Me</span></h1>
         <p className='text-gray-400 text-sm w-9/10 text-center'>Analytical <span style={{color:"#075ef5"}}>Full-Stack Developer</span> and <span style={{color:"#075ef5"}} >Computer Science undergraduate</span> blending modern MERN architecture with rigorous problem-solving to scalable, high-performance web applications and backend systems.</p>
         <a href="resume_SAMITESH.pdf" className='button text-center'>View Resume</a>
       </div>
@@ -124,6 +124,24 @@ const StyledWrapper = styled.div`
 
 .button:active {
   scale: 1;
+}
+@media (max-width: 360px) {
+  .card {
+    width: 300px;
+    height: 500px;
+  }
+    .card::before{
+    width: 280px;
+    height:400px;
+}
+    .image{
+    width:240px;
+    height:200px;
+    }
+    img{
+    width:240px;
+    height:200px;
+    }
 }
 
 
