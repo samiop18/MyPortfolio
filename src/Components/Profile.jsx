@@ -34,18 +34,26 @@ const StyledWrapper = styled.div`
     box-shadow:0 4px 28px #1d2fb5;
   }
     .image{
+        overflow:hidden;
         background-color:white;
         height:260px;
         width:320px;
         m-auto;
         border-radius:20px;
+        transition:all 0.4s ease;
     }
 
     img{
         width:100%;
         height:260px;
         object-fit:cover;
-       border-radius:20px; 
+        border-radius:20px; 
+        shrink-0;
+        transition:all 0.4s ease;
+       
+    }
+    img:hover{
+      transform:translateY(8%) scale(1.2);
     }
 
    

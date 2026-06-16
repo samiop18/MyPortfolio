@@ -21,9 +21,8 @@ const AboutBgm = () => {
 const StyledWrapper = styled.div`
   .container {
     position:absolute;
+    inset:0;
     z-0;
-    top:0;
-    left:0;
     height: 100%;
     width: 100%;
     background: ${bg};
