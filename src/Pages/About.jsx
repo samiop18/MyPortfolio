@@ -1,10 +1,11 @@
 import AboutBgm from "../Components/AboutBgm"
 import Profile from "../Components/Profile"
 const About = () => {
+
   return (
-    <div id="about" className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+    <div id="about" className="relative h-screen w-full overflow-hidden flex items-center justify-center cursor-pointer">
       <AboutBgm />
-      <div className="h-3/4 w-[90%] max-w-[1400px] z-30 mt-30 mx-auto flex lg:flex-row flex-col lg:gap-10 justify-center items-center">
+      <div className="h-3/4 w-[90%] z-30 mt-20 mx-auto flex lg:flex-row flex-col lg:gap-10 justify-center items-center">
           <div style={{ boxShadow:"0px 4px 24px #1d2fb5"}} className="hidden lg:flex items-center justify-center flex-col h-full w-[60%] gap-8 ">
     
             <div style={{ boxShadow:"0px 4px 24px #1d2fb5"}} className="h-1/2 w-[90%] rounded-2xl bg-black/40 backdrop-blur-lg flex justify-center flex-col px-10 py-6 border-2 border-blue-600 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-102">
@@ -20,7 +21,7 @@ const About = () => {
               <div style={{ boxShadow:"0px 4px 24px #1d2fb5"}} className="h-full w-1/2 rounded-2xl bg-black/40 backdrop-blur-lg border-2 border-blue-600 flex flex-col justify-center px-5 pt-5 transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-102">
                 <h1 className="text-gray-200 text-center font-bold text-lg">My <span className="text-blue-600"> Experience</span></h1>
                 <ul className="list-disc text-gray-400 text-sm m-auto mt-2 ml-6">
-                  <li>MERN Stack Intern: Engineered real-time web architectures, optimizing video-conferencing and crypto-tracking systems at Codec Technologies for seamless performance</li>
+                  <li>MERN Stack Intern: Engineered real-time web architectures, optimizing video-conferencing and crypto-tracking systems at <a href="https://codectechnologies.in/" className="text-blue-500 underline">Codec Technologies</a> for seamless performance</li>
                   
                 </ul>
               </div>

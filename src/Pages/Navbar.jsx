@@ -34,7 +34,7 @@ const Navbar = () => {
     
     <motion.div
       style={{boxShadow}}
-      className="fixed top-0 lg:top-5 w-full lg:w-[70%] h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center justify-between"
+      className="cursor-pointer fixed top-0 lg:top-5 w-full lg:w-[70%] h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center justify-between"
     >
       <div>
         <a href="#">
@@ -60,13 +60,13 @@ const Navbar = () => {
           <motion.div
             key={link.text}
             style={{ border, boxShadow }}
-            className="lg:border-none! lg:shadow-none! lg:bg-transparent1 lg:backdrop-blur-none! bg-white/10 backdrop-blur-md rounded-2xl w-full lg:w-auto overflow-hidden lg:px-4 lg:bg-transparent"
+            className="pointer:cursor! lg:border-none! lg:shadow-none! lg:bg-transparent1 lg:backdrop-blur-none! bg-white/10 backdrop-blur-md rounded-2xl w-full lg:w-auto overflow-hidden lg:px-4 lg:bg-transparent"
           >
             <HashLink 
               smooth 
               to={link.to} 
               onClick={() => setisClicked(false)} 
-              className="block w-full text-center lg:text-left text-gray-300 text-lg font-bold transition-all duration-100 ease-in-out hover:text-pink-800 active:scale-90 py-3 lg:py-0"
+              className="pointer:cursor! block w-full text-center lg:text-left text-gray-300 text-lg font-semibold transition-all duration-100 ease-in-out hover:text-pink-800 active:scale-90 py-3 lg:py-0 hover:shadow-2xl"
             >
               {link.text}
             </HashLink>

@@ -2,9 +2,9 @@
 import styled from 'styled-components';
 
 
-const bg ="radial-gradient(100% 90% at 50% 70% ,black 60%,#1d2fb5)";
+const bg ="radial-gradient(90% 90% at 50% 30% ,black 70%,#0af0d9)";
 
-const AboutBgm = () => {
+const SkillsBG = () => {
    
   return (
     <StyledWrapper>
@@ -2123,4 +2123,4 @@ const StyledWrapper = styled.div`
     }
   }`;
 
-export default AboutBgm;
+export default SkillsBG;
