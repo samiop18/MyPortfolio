@@ -81,7 +81,7 @@ const Skills = () => {
                     <li className="w-full flex flex-row justify-start gap-3  text-gray-300 font-light text-start items-center lg:text-sm text-xs">Acceptance Rate <span className="text-orange-400 font-semibold">: 75.68%</span></li>
                   
                   </ul>
-                </div>
+                </div> 
               </div>
           </div>
           <div style={{boxShadow:"0 4px 24px #e06f12"}} className=" hidden rounded-2xl h-1/2 w-full lg:flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105"></div>

@@ -1,9 +1,74 @@
+import ContactBG from "../Components/ContactBG"
+import { Minus, Square, X ,Send} from 'lucide-react';
 
 
 const Contact = () => {
   return (
-    <div id="contact"className="h-screen w-full bg-red-900">
+    <div id="contact" className="relative h-screen w-full bg-red-900 flex flex-col justify-center items-center gap-10">
+      <ContactBG />
+      <h1 className="z-40 text-5xl text-gray-200 font-extrabold mt-10">Get in <span className="text-green-600">touch</span></h1>
+      <div className="z-40 h-[50%] w-[95%] lg:w-[80%] flex flex-col lg:flex-row justify-center items-center gap-10">
+
+        
+        <div className="hidden lg:flex flex-col h-full w-6/10 border-2 border-green-600 bg-[#1e1e1e] rounded-xl overflow-hidden shadow-[0px_4px_24px_rgba(22,163,74,0.4)]">
       
+          <div className="h-10 w-full bg-[#323233] flex flex-row items-center justify-between px-4">
+            <div className="flex gap-2">
+              <div className="w-3 h-3 rounded-full bg-red-500"></div>
+              <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div className="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div className="text-gray-400 text-xs font-mono">contact.json - VS Code</div>
+            <div className="flex gap-3 text-gray-400">
+              <Minus size={16} className="cursor-pointer hover:text-white transition-colors" />
+              <Square size={14} className="cursor-pointer hover:text-white transition-colors" />
+              <X size={16} className="cursor-pointer hover:text-white transition-colors" />
+            </div>
+          </div>
+        
+          <div className="flex-1 w-full p-4 lg:p-6 font-mono text-sm lg:text-base overflow-auto">
+            <div className="flex">
+              <div className="flex flex-col text-gray-500 select-none pr-4 text-right border-r border-gray-700 mr-4">
+                <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+              </div>
+              <div className="flex flex-col">
+                <div className="text-gray-300"><span className="text-[#c678dd]">const</span> <span className="text-[#e5c07b]">contactDetails</span> <span className="text-[#56b6c2]">=</span> {"{"}</div>
+                <div className="ml-6 mt-1"><span className="text-[#e06c75]">"name"</span><span className="text-gray-300">:</span> <span className="text-green-500">"Samitesh Panda"</span><span className="text-gray-300">,</span></div>
+                <div className="ml-6 mt-1"><span className="text-[#e06c75]">"email"</span><span className="text-gray-300">:</span> <span className="text-green-500">"samiteshpanda@gmail.com"</span><span className="text-gray-300">,</span></div>
+                <div className="ml-6 mt-1"><span className="text-[#e06c75]">"phone"</span><span className="text-gray-300">:</span> <span className="text-green-500">"+91 70080 24595"</span><span className="text-gray-300">,</span></div>
+                <div className="ml-6 mt-1"><span className="text-[#e06c75]">"location"</span><span className="text-gray-300">:</span> <span className="text-green-500">"Odisha, India"</span><span className="text-gray-300">,</span></div>
+                <div className="ml-6 mt-1"><span className="text-[#e06c75]">"socials"</span><span className="text-gray-300">:</span> {"{"}</div>
+                <div className="ml-12 mt-1"><span className="text-[#e06c75]">"github"</span><span className="text-gray-300">:</span> <span className="text-green-500">"github.com/samiop18"</span><span className="text-gray-300">,</span></div>
+                <div className="ml-12 mt-1"><span className="text-[#e06c75]">"linkedin"</span><span className="text-gray-300">:</span> <span className="text-green-500">"linkedin.com/in/samitesh"</span></div>
+                <div className="ml-6 mt-1 text-gray-300">{"}"}</div>
+                <div className="text-gray-300 mt-1">{"}"}<span className="text-[#56b6c2]">;</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div className="relative h-full w-8/10 lg:w-4/10 rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center">
+          <div className="rounded-3xl absolute inset-0 h-full w-full z-10 bg-linear-to-r to-green-900 from-black border-0 border-l-8 border-green-700 flex items-center flex-col justify-center gap-4">
+            <h1 className="text-2xl text-green-600 font-bold text-center ">Send A<span className="text-gray-300"> Message</span></h1>
+            <form className="h-8/10 w-9/10 flex flex-col items-center justify-center gap-1">
+              <label htmlFor="name" className="text-green-600 font-bold text-start w-8/10">Your Name</label>
+              <input type='text' id='name' placeholder="" className="border-green-600 border-3 w-8/10 rounded-3xl bg-gray-400 flex px-3 mb-2"></input>
+              <label htmlFor="email" className="text-green-600 font-bold text-start w-8/10">Your Email</label>
+              <input type='text' id='email' placeholder="" className="border-green-600 border-3 w-8/10 rounded-3xl bg-gray-400 flex px-3 mb-2"></input>
+              <label htmlFor="message" className="text-green-600 font-bold text-start w-8/10">Message</label>
+              <input type='textarea' id='message' placeholder="" className="border-green-600 border-3 w-8/10 rounded-3xl h-1/5 bg-gray-400 flex px-3 mb-2"></input>
+              
+              <button type="submit" className="mt-2 flex items-center justify-center gap-1 bg-linear-to-r from-green-800 to-black py-3 px-6 rounded-3xl text-bold text-sm text-gray-300 border-0 border-r-8 border-green-600 transition-all duration-200 ease hover:from-black hover:to-green-700 hover:border-r-0 hover:border-l-8 active:scale-105">Send Message <Send /></button>
+
+            </form>
+          </div>
+          
+        </div>
+
+        
+      </div>
+      <div ></div>
     </div>
   )
 }
