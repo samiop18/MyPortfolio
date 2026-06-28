@@ -1,16 +1,33 @@
-# React + Vite
+# 🚀 Modern Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, responsive portfolio website built to showcase full-stack web engineering projects, technical skills, and academic milestones. Designed with a sleek, high-contrast tech aesthetic.
 
-Currently, two official plugins are available:
+## 🛠️ Tech Stack & Architecture
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Frontend:** React.js / Next.js, Tailwind CSS, Context API
+* **Backend:** Node.js, Express.js, FastAPI, Python
+* **Databases:** MongoDB, MySQL, PostgreSQL
+* **Optimization:** Asynchronous DOM handling, Intersection Observer API animations, requestAnimationFrame optimizations
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+* **Fluid & Responsive Design:** Built using a mobile-first approach with CSS Flexbox and Grid, scaling seamlessly from mobile devices to desktop displays.
+* **Dynamic Scroll Animations:** Technical skill percentage bars animate smoothly using the **Intersection Observer API** combined with `requestAnimationFrame` to eliminate cascading renders and ensure a fluid 60 FPS user experience.
+* **Quantified Metrics Dashboard:** Displays technical competencies grounded in verifiable engineering milestones (e.g., complex challenge volumes, API payload reductions).
+* **Performance First:** Zero layout shifts, optimized asset delivery, and strict type-safety architectures.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📂 Repository Structure
+
+```text
+├── public/          # Static assets, icons, and branding graphics
+├── src/
+│   ├── components/  # Reusable UI modules (SkillBars, Navbar, ProjectCards)
+│   ├── sections/    # Main page layouts (Hero, Education, Skills, Projects)
+│   ├── styles/      # Tailwind global configurations and themes
+│   └── App.jsx      # Core application entry point
+├── package.json     # Project dependencies and script shortcuts
+└── README.md        # Documentation
