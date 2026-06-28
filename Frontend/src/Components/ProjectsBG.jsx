@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 
-const bg ="radial-gradient(90% 90% at 50% 70% ,black 70%,#f01180)";
+const bg ="radial-gradient(90% 90% at 50% 70% ,black 70%,black)";
 
 const ProjectsBG = () => {
    

@@ -8,8 +8,8 @@ const Profile = () => {
         <div className="image">
             <img src='profileImg.jpeg'></img>
         </div>
-        <h1 className='text-2xl lg:text-3xl font-extrabold text-gray-300'>About <span style={{color:"#122ade"}}>Me</span></h1>
-        <p className='text-gray-400 text-sm w-9/10 text-center'>Analytical <span style={{color:"#075ef5"}}>Full-Stack Developer</span> and <span style={{color:"#075ef5"}} >Computer Science undergraduate</span> blending modern MERN architecture with rigorous problem-solving to scalable, high-performance web applications and backend systems.</p>
+        <h1 className='text-2xl lg:text-3xl font-extrabold text-gray-300'>About <span style={{color:"#fc0384"}}>Me</span></h1>
+        <p className='text-gray-400 text-sm w-9/10 text-center'>Analytical <span style={{color:"#fc0384"}}>Full-Stack Developer</span> and <span style={{color:"#fc0384"}} >Computer Science undergraduate</span> blending modern MERN architecture with rigorous problem-solving to scalable, high-performance web applications and backend systems.</p>
         <a href="resume_SAMITESH.pdf" className='button text-center'>View Resume</a>
       </div>
     </StyledWrapper>
@@ -31,7 +31,7 @@ const StyledWrapper = styled.div`
     gap: 12px;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow:0 4px 28px #1d2fb5;
+    box-shadow:0 4px 28px #fc0384;
   }
     .image{
         overflow:hidden;
@@ -67,10 +67,10 @@ const StyledWrapper = styled.div`
     width: 338px;
     height: 430px;
     border-radius: 10px;
-    background: linear-gradient(-45deg, #1d2fb5 0%, #1d2fb5 100%);
+    background: linear-gradient(-45deg, #fc0384 0%, #fc0384 100%);
     z-index: -10;
     pointer-events: none;
-    box-shadow:0px 4px 24px #1d2fb5;
+    box-shadow:0px 4px 24px #fc0384;
     transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
@@ -79,7 +79,7 @@ const StyledWrapper = styled.div`
     z-index: -1;
     position: absolute;
     inset: 0;
-    background: linear-gradient(-45deg, #1d2fb5 0%, #1d2fb5 100%);
+    background: linear-gradient(-45deg, #fc0384 0%, #fc0384 100%);
     transform: translate3d(0, 0, 0) scale(0.95);
     filter: blur(20px);
   }
@@ -97,8 +97,8 @@ const StyledWrapper = styled.div`
   position: relative;
   padding: 10px 20px;
   font-size: 18px;
-  color: #1d2fb5;
-  border: 3px solid #1d2fb5;
+  color: #fc0384;
+  border: 3px solid #fc0384;
   border-radius: 34px;
   background-color: transparent;
   font-weight: 600;
@@ -116,7 +116,7 @@ const StyledWrapper = styled.div`
   border-radius: inherit;
   scale: 0;
   z-index: -1;
-  background-color: #1d2fb5;
+  background-color: #fc0384;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -127,7 +127,7 @@ const StyledWrapper = styled.div`
 .button:hover {
   color: #212121;
   scale: 1.1;
-  box-shadow: 0 0px 20px #1d2fb5;
+  box-shadow: 0 0px 20px #fc0384;
 }
 
 .button:active {

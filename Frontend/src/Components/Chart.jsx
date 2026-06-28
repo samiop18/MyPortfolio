@@ -18,7 +18,7 @@ const Chart = () => {
 
   return (
     
-    <div className="h-2/3 w-5/14 bg-transparent flex flex-row relative lg:scale-120 scale-110 transition-all duration-200 ease-in-out hover:scale-130">
+    <div className="z-30 h-2/3 w-5/14 bg-transparent flex flex-row relative lg:scale-120 scale-110 transition-all duration-200 ease-in-out hover:scale-130">
       
       <Doughnut 
         options={options}

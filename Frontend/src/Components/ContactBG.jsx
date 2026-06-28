@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 
-const bg ="radial-gradient(80% 90% at 50% 30% ,black 70%,#17b31c)";
+const bg ="radial-gradient(80% 90% at 50% 30% ,black 70%,#fc0384)";
 
 const ContactBG = () => {
    
