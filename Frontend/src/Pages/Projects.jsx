@@ -1,7 +1,7 @@
 import ProjectsBG from "../Components/ProjectsBG";
 import { ChevronRight } from "lucide-react";
 import { ChevronLeft } from "lucide-react";
-import CardBG from "../Components/cardBG";
+import CardBG from "../Components/CardBG";
 import { MoveUpRight } from "lucide-react";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { GithubIcon } from "@hugeicons/core-free-icons";

@@ -1,0 +1,19 @@
+{
+  "version": 3,
+  "installCommand": "npm install --prefix Frontend",
+  "builds": [
+    {
+      "src": "Frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/Frontend/dist/$1"
+    }
+  ]
+}
