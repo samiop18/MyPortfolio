@@ -71,7 +71,7 @@ const Skills = () => {
         </div>
         <div className="lg:h-[80%] lg:w-[45%] h-1/2 w-full rounded-2xl flex flex-col items-center justify-center gap-5">
           <div style={{boxShadow:"0 4px 24px #e06f12"}} className="rounded-2xl lg:h-1/2 h-9/10 lg:w-full w-9/10 flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105 lg:py-1 py-2">
-              <h1 className="text-center text-white font-bold lg:text-2xl text-xl">Competitive <span className="text-orange-500">Programming</span></h1>
+              <h1 className="text-center text-white font-bold lg:text-2xl text-lg">Competitive <span className="text-orange-500">Programming</span></h1>
               <div className="h-8/10 w-full flex-row flex items-center justify-center ">
                 <Chart />
                 <div className="h-full w-1/2 flex flex-col justify-center lg:gap-2 items-start">
