@@ -24,7 +24,7 @@ const Projects = () => {
     if (slideInterval.current) {
       clearInterval(slideInterval.current);
     }
-    slideInterval.current = window.setInterval(goRight, 3000);
+    slideInterval.current = window.setInterval(goRight, 5000);
   };
 
   useEffect(() => {
