@@ -4,7 +4,7 @@ import DivsBG from "../Components/DivsBG"
 const About = () => {
 
   return (
-    <div id="about" className="relative h-screen w-full overflow-hidden flex items-center justify-center cursor-pointer">
+    <div id="about" className="shrink-0 relative h-screen w-full bg-transparent overflow-hidden flex items-center justify-center cursor-pointer">
       <AboutBgm />
       <div className="h-3/4 w-[90%] z-30 mt-20 mx-auto flex lg:flex-row flex-col lg:gap-10 justify-center items-center">
           <div className="relative rounded-2xl hidden lg:flex items-center justify-center flex-col h-full w-[60%] gap-8 ">

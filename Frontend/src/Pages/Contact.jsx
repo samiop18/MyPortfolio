@@ -1,14 +1,15 @@
-import ContactBG from "../Components/ContactBG"
+
 import { Minus, Square, X ,Send} from 'lucide-react';
 import Social from "../Components/Social";
+import ContactBG from "../Components/ContactBG"
 
 const Contact = () => {
   const submiteHandler = (e)=>{
     e.preventDefault();
   }
   return (
-    <div id="contact" className="relative h-screen w-full flex flex-col justify-center items-center gap-10">
-      <ContactBG />
+    <section id="contact" className=" relative h-screen w-full bg-transparent flex flex-col justify-center items-center gap-10">
+     <ContactBG />
       <h1 className="z-40 text-5xl text-gray-200 font-extrabold mt-10">Get in <span className="text-pink-600">touch</span></h1>
       <div className="z-40 h-[50%] w-[95%] lg:w-[80%] flex flex-col lg:flex-row justify-center items-center gap-10">
 
@@ -79,7 +80,7 @@ const Contact = () => {
         <Social />
         <h1 className="text-xs text-gray-300 text-center mt-3">Samitesh Panda | MERN Stack developer</h1>
       </div>
-    </div>
+    </section>
   )
 }
 
