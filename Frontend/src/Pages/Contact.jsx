@@ -108,8 +108,8 @@ const Contact = () => {
 
 
 
-          <div className={`absolute inset-0 z-40 bg-transparent flex items-center justify-center transition-all duration-300 ease-in-out ${popout ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
-            <div className={`w-11/12 md:w-1/2 lg:w-2/3 rounded-3xl border-4 border-pink-600 flex flex-col items-center justify-center gap-6 p-8 bg-linear-to-r from-pink-900 to-black shadow-2xl shadow-pink-600/20 text-center transition-all duration-300 ease-in-out ${popout ? "scale-100 translate-y-0" : "scale-95 translate-y-10"}`}>
+          <div className={`absolute inset-0 z-40 bg-transparent backdrop-blur-sm rounded-3xl flex items-center justify-center transition-all duration-300 ease-in-out ${popout ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}>
+            <div style={{boxShadow : "0 4px 24px #fc0384"}}className={`w-11/12 md:w-1/2 lg:w-2/3 rounded-3xl border-4 border-pink-600 flex flex-col items-center justify-center gap-6 p-8 bg-linear-to-r from-pink-900 to-black shadow-2xl shadow-pink-600/20 text-center transition-all duration-300 ease-in-out ${popout ? "scale-100 translate-y-0" : "scale-95 translate-y-10"}`}>
               <h1 className="text-lg text-gray-200 font-bold">Message Sent Successfully!</h1>
               <button onClick={popoutHandler} className="px-8 py-2 mt-2 rounded-3xl bg-pink-600 text-gray-200 font-bold cursor-pointer hover:bg-pink-700 transition-all hover:scale-105">OK</button>
             </div>
