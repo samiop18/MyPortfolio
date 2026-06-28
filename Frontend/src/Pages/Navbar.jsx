@@ -15,7 +15,7 @@ const Navbar = () => {
   const COLORS = ["#750b27", "#a81e51", "#1d2fb5", "#1e750b", "#e01414"];
   const color = useMotionValue(COLORS[0]);
   const border = useMotionTemplate`1px solid ${color}`
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  
   const [isClicked, setisClicked] = useState(false)
   const triggerSideBar = ()=>{
     setisClicked(!isClicked)
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     
     <motion.div
-      style={{boxShadow}}
+      style={{boxShadow : '0 4px 30px grey'}}
       className="cursor-pointer fixed top-0 lg:top-5 w-full lg:w-[70%] h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center justify-between"
     >
       <div>
@@ -59,7 +59,7 @@ const Navbar = () => {
         ].map((link) => (
           <motion.div
             key={link.text}
-            style={{ border, boxShadow }}
+            style={{ border}}
             className="pointer:cursor! lg:border-none! lg:shadow-none! lg:bg-transparent1 lg:backdrop-blur-none! bg-white/10 backdrop-blur-md rounded-2xl w-full lg:w-auto overflow-hidden lg:px-4 lg:bg-transparent"
           >
             <HashLink 
