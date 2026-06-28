@@ -25,7 +25,7 @@ const Contact = () => {
 
     setBuffer(true)
 
-    axios.post("http://localhost:3000/api/send", data)
+    axios.post("https://samitesh-portfolio-backend.vercel.app/api/send", data)
       .then((res) => {
         setBuffer(false)
         popoutHandler()
