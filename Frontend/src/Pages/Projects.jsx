@@ -84,27 +84,27 @@ const Projects = () => {
                 return (
                   <div className="h-full lg:w-270 w-65 bg-transparent flex flex-row shrink-0 items-center justify-center">
                     <div className="h-full lg:w-1/2 w-full flex flex-col items-center justify-center gap-4 p-3">
-                      <h1 className="w-9/10 uppercase text-center font-bold border-2 px-5 py-2 rounded-lg text-pink-600 bg-black/40 backdrop-blur-3xl">
+                      <h1 className="w-9/10 uppercase text-center font-bold lg:border-2 px-5 py-2 rounded-lg text-pink-600 lg:bg-black/40 lg:backdrop-blur-3xl">
                         {e.title}
                       </h1>
-                      <div className="flex overflow-hidden lg:h-2/4 lg:w-9/10 h-1/2 w-8/10 rounded-2xl">
+                      <div className="flex overflow-hidden lg:h-2/4 lg:w-9/10 h-1/4 w-8/10 rounded-2xl">
                         <img
                           src={e.imgUrl}
                           className="h-full w-full rounded-2xl object-cover transition-all duration-300 ease-in-out hover:scale-120"
                         ></img>
                       </div>
 
-                      <div className="w-full  h-1/8 flex flex-row items-center justify-center gap-4">
+                      <div className="w-full  lg:h-1/8 flex lg:flex-row flex-col items-center justify-center gap-4">
                         <a
                           href={e.sourceCode}
-                          className="lg:w-1/3 w-1/2 h-4/5 bg-black text-center lg:text-md text-xs flex text-white items-center justify-center rounded-xl transition-all duration-300 ease-in-out border-2 border-black hover:bg-pink-700 hover:scale-108 hover:border-black gap-2"
+                          className="lg:w-1/3 w-2/3 lg:h-4/5 h-15 bg-black text-center lg:text-md text-sm flex text-white items-center justify-center rounded-xl transition-all duration-300 ease-in-out border-2 border-black hover:bg-pink-700 hover:scale-108 hover:border-black gap-2"
                         >
                           Source Code{" "}
                           <HugeiconsIcon icon={GithubIcon} size={20} />
                         </a>
                         <a
                           href={e.liveUrl}
-                          className="lg:w-1/3 w-1/2 h-4/5 bg-pink-700 text-center lg:text-md text-xs flex text-white items-center border-2 border-transparent justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-transparent hover:border-pink-600 hover:text-white hover:scale-108 gap-2"
+                          className="lg:w-1/3 w-2/3 lg:h-4/5 h-15 bg-pink-700 text-center lg:text-md text-sm flex text-white items-center border-2 border-transparent justify-center rounded-xl transition-all duration-300 ease-in-out hover:bg-transparent hover:border-pink-600 hover:text-white hover:scale-108 gap-2"
                         >
                           Live Link <MoveUpRight size={15} />
                         </a>

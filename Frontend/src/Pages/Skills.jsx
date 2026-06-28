@@ -38,13 +38,13 @@ const Skills = () => {
     <section
       ref={sectionRef}
       id="skills"
-      className="relative h-screen w-full bg-black overflow-hidden items-center flex flex-col justify-center"
+      className="relative lg:h-screen h-[150vh] w-full bg-black overflow-hidden items-center flex flex-col justify-center"
     >
       <SkillsBG />
       <h1 className="z-30 lg:mt-30 mt-20 lg:-mb-20 lg:text-4xl text-2xl text-center text-white font-extrabold">SKILLS - <span className="text-pink-600">What I can do ?</span></h1>
-      <div className="z-30 h-[90%] w-[95%] flex lg:flex-row flex-col justify-center items-center lg:gap-7 gap-4 m-auto lg:mt-20 mt-5">
-        <div className="lg:h-[80%] lg:w-[45%] h-9/10 w-9/10 rounded-2xl flex lg:flex-col flex-row justify-center items-center gap-5">
-          <div className="lg:border-r-10 border-0 border-pink-700 relative lg:h-1/2 h-full lg:w-full w-1/2 flex bg-black flex-col justify-center items-center px-4 py-3 rounded-2xl transition-all duration-200 ease-in-out hover:scale-105">
+      <div className="z-30 h-[90%] w-[95%] flex lg:flex-row flex-col justify-center items-center lg:gap-7 gap-4 m-auto lg:mt-20 mt-4">
+        <div className="lg:h-[80%] lg:w-[45%] h-1/2 w-9/10 rounded-2xl flex flex-col justify-center items-center gap-5">
+          <div className="lg:border-r-10 border-0 border-pink-700 relative lg:h-1/2 h-1/2 w-full flex bg-black flex-col justify-center items-center px-4 py-3 rounded-2xl transition-all duration-200 ease-in-out hover:scale-105">
             <DivsBG />
             <h1 className="z-20 text-center text-white font-bold lg:text-2xl">Frontend <span className="text-pink-500">Development</span></h1>
             <div className="z-20 w-full lg:h-[37.5%] h-1/2 lg:mt-3 flex lg:flex-row flex-col items-center justify-center gap-5">
@@ -57,7 +57,7 @@ const Skills = () => {
               <SkillsBar language="React.js" percentage={82} isIntersecting={hasAnimated}/>
             </div>
           </div>
-          <div className="lg:border-r-10 border-0 border-pink-700 relative lg:h-1/2 h-full lg:w-full w-1/2 flex flex-col bg-black justify-center items-center px-4 py-3 rounded-2xl transition-all duration-200 ease hover:scale-105">
+          <div className="lg:border-r-10 border-0 border-pink-700 relative lg:h-1/2 h-1/2 w-full flex flex-col bg-black justify-center items-center px-4 py-3 rounded-2xl transition-all duration-200 ease hover:scale-105">
             <DivsBG />
             <h1 className="z-20 text-center text-white font-bold lg:text-2xl">Backend & <span className="text-pink-500">Frameworks</span></h1>
             <div className="z-20 w-full h-[37.5%] mt-3 flex lg:flex-row flex-col items-center justify-center gap-5">
@@ -73,7 +73,7 @@ const Skills = () => {
           
         </div>
         <div className="lg:h-[80%] lg:w-[45%] h-1/2 w-full rounded-2xl flex flex-col items-center justify-center gap-5">
-          <div className="relative z-30 rounded-2xl lg:h-1/2 h-9/10 lg:w-full w-9/10 flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105 lg:py-1 py-2 lg:border-r-10 border-0 border-pink-700">
+          <div className="relative z-30 rounded-2xl lg:h-1/2 h-1/2 lg:w-full w-9/10 flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105 lg:py-1 py-2 lg:border-r-10 border-0 border-pink-700">
           <DivsBG />
           
               <h1 className="z-30 text-center text-white font-bold lg:text-2xl text-lg">Competitive <span className="text-pink-500">Programming</span></h1>
@@ -93,7 +93,7 @@ const Skills = () => {
               </div>
               
           </div>
-          <div className="lg:border-r-10 border-0 border-pink-700 relative hidden rounded-2xl h-1/2 w-full lg:flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105 gap-2">
+          <div className="lg:border-r-10 border-0 border-pink-700 relative rounded-2xl lg:h-1/2 h-1/2 lg:w-full w-9/10 flex flex-col items-center justify-center bg-black transition-all duration-200 ease-in-out hover:scale-105 gap-2">
           <DivsBG />
             <div className="z-20 rounded-2xl absolute inset-0 bg-black/10 backdrop-blur-xl flex flex-col items-center justify-center gap-2">
             <h1 className="text-center text-white font-bold lg:text-2xl text-xl">Currently <span className="text-pink-500">Exploring</span></h1>

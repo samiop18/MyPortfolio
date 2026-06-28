@@ -1,5 +1,5 @@
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu , X } from 'lucide-react';
 import { HashLink } from "react-router-hash-link";
 
@@ -10,6 +10,22 @@ const Navbar = () => {
   
   
   const [isClicked, setisClicked] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      // Toggle state based on scroll position
+      if (window.scrollY > 360) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   const triggerSideBar = ()=>{
     setisClicked(!isClicked)
   }
@@ -19,12 +35,12 @@ const Navbar = () => {
   return (
     
     <div
-      style={{boxShadow : '0 4px 30px grey'}}
-      className="cursor-pointer fixed top-0 lg:top-5 w-full lg:w-[70%] h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center justify-between"
+      style={{boxShadow : `0 4px 30px ${isScrolled ? "#fc0384":"grey"}`}}
+      className={`cursor-pointer fixed left-0 right-0 top-0 lg:top-5 w-full ${isScrolled ? 'lg:w-[70%]' : 'lg:w-[50%]'} h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center ${isScrolled ? 'justify-between' : 'lg:justify-center justify-between'} transition-all duration-1200 ease-in-out`}
     >
-      <div>
+      <div className={`transition-all duration-700 ease-in-out overflow-hidden flex items-center ${isScrolled ? 'opacity-100 max-w-[200px]' : 'opacity-0 max-w-0'}`}>
         <a href="/">
-          <h1 className="cursor-pointer items-center flex justify-center font-extrabold text-xl sm:text-2xl text-gray-300">
+          <h1 className="cursor-pointer whitespace-nowrap items-center flex justify-center font-extrabold text-xl sm:text-2xl text-gray-300">
             SAMI
             <span className="text-pink-600">TESH</span>
           </h1>
