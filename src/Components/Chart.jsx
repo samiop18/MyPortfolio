@@ -1,10 +1,10 @@
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js"
 import { Doughnut } from "react-chartjs-2"
-
+import LeetcodeProgress from "../Data/LeetcodeProgress"
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 const Chart = () => {
-  const totalQuestions = 190
+  const totalQuestions = LeetcodeProgress.totalQuestions
 
   const options = {
     cutout: "75%", 
@@ -27,7 +27,7 @@ const Chart = () => {
           datasets: [
             {
               label: "questions",
-              data: [119, 69, 2],
+              data: [LeetcodeProgress.easy, LeetcodeProgress.medium, LeetcodeProgress.hard],
               backgroundColor: [
                 "#0acc0d",
                 "#db8814",

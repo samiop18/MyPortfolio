@@ -37,8 +37,8 @@ const Navbar = () => {
       className="cursor-pointer fixed top-0 lg:top-5 w-full lg:w-[70%] h-16 lg:h-15 pl-5 lg:px-10 py-2 rounded-none lg:rounded-4xl bg-white/10 backdrop-blur-lg z-49 mx-auto flex items-center justify-between"
     >
       <div>
-        <a href="#">
-          <h1 className="items-center flex justify-center font-extrabold text-xl sm:text-2xl text-gray-300">
+        <a href="/">
+          <h1 className="cursor-pointer items-center flex justify-center font-extrabold text-xl sm:text-2xl text-gray-300">
             SAMI
             <motion.span style={{color}}>TESH</motion.span>
           </h1>
@@ -51,7 +51,7 @@ const Navbar = () => {
         </motion.button>
       <div className={`lg:h-full lg:relative absolute lg:w-fit flex lg:flex-row lg:gap-10 lg:shadow-none justify-center lg:px-0 lg:py-2.5 px-10 h-screen w-7/10 shadow-pink-700 bg-radial from-pink-950 to-gray-950 lg:from-transparent lg:to-transparent shadow-xl right-0 flex-col top-0 gap-10 transition-all duration-800 ease-in-out lg:translate-x-0 ${isClicked ? "translate-x-0":"translate-x-200"}`}>
         {[
-          { to: '/#home', text: 'HOME' },
+          { to: '/#', text: 'HOME' },
           { to: '/#about', text: 'ABOUT' },
           { to: '/#skills', text: 'SKILLS' },
           { to: '/#projects', text: 'PROJECTS' },
@@ -68,7 +68,7 @@ const Navbar = () => {
               onClick={() => setisClicked(false)} 
               className="pointer:cursor! block w-full text-center lg:text-left text-gray-300 text-lg font-semibold transition-all duration-100 ease-in-out hover:text-pink-800 active:scale-90 py-3 lg:py-0 hover:shadow-2xl"
             >
-              {link.text}
+              <span className="cursor-pointer">{link.text}</span>
             </HashLink>
           </motion.div>
         ))}

@@ -80,7 +80,7 @@ const LandingPage = () => {
             View my works
           </motion.a>
           <motion.a
-            href="#"
+            href="/#contact"
             style={{ border, boxShadow }}
             className="w-fit sm:w-auto mt-5 z-30 rounded-2xl px-6 py-3 text-center transition-all duration-100 ease-in-out text-white hover:scale-105 active:scale-95"
           >

@@ -1,8 +1,11 @@
 import ContactBG from "../Components/ContactBG"
 import { Minus, Square, X ,Send} from 'lucide-react';
-
+import Social from "../Components/Social";
 
 const Contact = () => {
+  const submiteHandler = (e)=>{
+    e.preventDefault();
+  }
   return (
     <div id="contact" className="relative h-screen w-full bg-red-900 flex flex-col justify-center items-center gap-10">
       <ContactBG />
@@ -51,7 +54,11 @@ const Contact = () => {
         <div className="relative h-full w-8/10 lg:w-4/10 rounded-3xl p-6 lg:p-8 flex flex-col justify-center items-center">
           <div className="rounded-3xl absolute inset-0 h-full w-full z-10 bg-linear-to-r to-green-900 from-black border-0 border-l-8 border-green-700 flex items-center flex-col justify-center gap-4">
             <h1 className="text-2xl text-green-600 font-bold text-center ">Send A<span className="text-gray-300"> Message</span></h1>
-            <form className="h-8/10 w-9/10 flex flex-col items-center justify-center gap-1">
+            <form
+              onSubmit={(e)=>{
+                submiteHandler(e);
+              }} 
+              className="h-8/10 w-9/10 flex flex-col items-center justify-center gap-1">
               <label htmlFor="name" className="text-green-600 font-bold text-start w-8/10">Your Name</label>
               <input type='text' id='name' placeholder="" className="border-green-600 border-3 w-8/10 rounded-3xl bg-gray-400 flex px-3 mb-2"></input>
               <label htmlFor="email" className="text-green-600 font-bold text-start w-8/10">Your Email</label>
@@ -68,7 +75,10 @@ const Contact = () => {
 
         
       </div>
-      <div ></div>
+      <div className="z-20 flex flex-col h-1/8 w-4/10  gap-1">
+        <Social />
+        <h1 className="text-xs text-gray-300 text-center mt-3">Samitesh Panda | MERN Stack developer</h1>
+      </div>
     </div>
   )
 }
