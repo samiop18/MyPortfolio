@@ -29,8 +29,8 @@ const projectsInfo = [
         title: "Shopify - Full-Stack E-Commerce Platform",
         description: "**Shopify Clone** is a high-performance e-commerce architecture built using **React.js, Tailwind CSS, Node.js, Express.js, and MongoDB**. The portal incorporates complete state management workflows for dynamic shopping carts, product lookup directories, user authentication protocols, and asynchronous digital transaction pipelines.",
         imgUrl: "shopify.png",
-        liveUrl: "https://shopify-clone-sami.vercel.app/",
-        sourceCode: "https://github.com/samiop18/shopify-clone.git",
+        liveUrl: "https://graceful-arithmetic-ecb7a6.netlify.app/",
+        sourceCode: "https://github.com/samiop18/shopify.git",
         keyFeatures: [
             {
                 pointHeader: "Dynamic Inventory:",
@@ -55,8 +55,8 @@ const projectsInfo = [
         title: "VividChat - P2P Video Conferencing System",
         description: "**VividChat** is a real-time, low-latency video conferencing platform engineered with the **MERN Stack (MongoDB, Express.js, React.js, Node.js) and WebRTC**. The system facilitates instant peer-to-peer audio-video streaming backed by end-to-end communication routing and secure signaling mechanisms.",
         imgUrl: "videoCalling.png",
-        liveUrl: "https://vividchat-stream.vercel.app/",
-        sourceCode: "https://github.com/samiop18/video-conferencing-app.git",
+        liveUrl: "https://convox-video-calling.netlify.app/login",
+        sourceCode: "https://github.com/samiop18/VideoCallingProject.git",
         keyFeatures: [
             {
                 pointHeader: "WebRTC Media Streaming:",
@@ -81,8 +81,8 @@ const projectsInfo = [
         title: "CacheSim - Memory Architecture Simulator",
         description: "**CacheSim** is an interactive memory architecture simulator developed with **React.js, Tailwind CSS, and TypeScript**. Designed to demonstrate low-level hardware behaviors, the platform models structural cache mapping, tracking trace hit/miss parameters, block evictions, and byte offset calculations in real time.",
         imgUrl: "cacheSimulator.png",
-        liveUrl: "https://cachesim-visualizer.vercel.app/",
-        sourceCode: "https://github.com/samiop18/cache-architecture-simulator.git",
+        liveUrl: "https://cache-simulator-mdel.netlify.app/",
+        sourceCode: "https://github.com/samiop18/cache-simulator",
         keyFeatures: [
             {
                 pointHeader: "Mapping Simulation:",
