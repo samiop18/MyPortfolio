@@ -64,10 +64,10 @@ const LandingPage = () => {
           <motion.a href="https://github.com/samiop18" style={{color,border,boxShadow}} className="lg:mt-5 z-30 font-bold p-3 transition-all duration-100 ease-in-out rounded-full hover:scale-110 active:scale-95">
             <HugeiconsIcon icon={GithubIcon} size={24} />
           </motion.a>
-          <motion.a href="https://github.com/samiop18" style={{color,border,boxShadow}} className="lg:mt-5 z-30 font-bold p-3 transition-all duration-100 ease-in-out rounded-full hover:scale-110 active:scale-95">
+          <motion.a href="https://www.linkedin.com/in/samitesh-panda-2b129a3a3/" style={{color,border,boxShadow}} className="lg:mt-5 z-30 font-bold p-3 transition-all duration-100 ease-in-out rounded-full hover:scale-110 active:scale-95">
             <HugeiconsIcon icon={LinkedinIcon} size={24} />
           </motion.a>
-          <motion.a href="https://github.com/samiop18" style={{color,border,boxShadow}} className="lg:mt-5 z-30 font-bold p-3 transition-all duration-100 ease-in-out rounded-full hover:scale-110 active:scale-95">
+          <motion.a href="https://leetcode.com/u/iemcGXqwvo/" style={{color,border,boxShadow}} className="lg:mt-5 z-30 font-bold p-3 transition-all duration-100 ease-in-out rounded-full hover:scale-110 active:scale-95">
             <HugeiconsIcon icon={LeetcodeIcon} size={24} />
           </motion.a>
         </div>
