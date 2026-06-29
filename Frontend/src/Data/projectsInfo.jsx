@@ -55,7 +55,7 @@ const projectsInfo = [
         title: "VividChat - P2P Video Conferencing System",
         description: "**VividChat** is a real-time, low-latency video conferencing platform engineered with the **MERN Stack (MongoDB, Express.js, React.js, Node.js) and WebRTC**. The system facilitates instant peer-to-peer audio-video streaming backed by end-to-end communication routing and secure signaling mechanisms.",
         imgUrl: "videoCalling.png",
-        liveUrl: "https://convox-video-calling.netlify.app/login",
+        liveUrl: "https://convox-video-calling.netlify.app/",
         sourceCode: "https://github.com/samiop18/VideoCallingProject.git",
         keyFeatures: [
             {
